@@ -28,7 +28,7 @@ function App() {
 			method: 'GET',
 			url: 'https://the-cocktail-db.p.rapidapi.com/popular.php',
 			headers: {
-			  'X-RapidAPI-Key': '659523c987mshca6b1e3b282be4ap1a3bf1jsn093e4806c025',
+			  'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API,
 			  'X-RapidAPI-Host': 'the-cocktail-db.p.rapidapi.com'
 			}
 		  };
