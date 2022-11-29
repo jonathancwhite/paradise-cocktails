@@ -1,0 +1,32 @@
+$bg-primary: #FFFBF2;
+$bg-highlight: #F7EDDE;
+$primary-color: #DB6355;
+$main-text: #493939;
+$secondary-text: #7E736B;
+
+@import url('../styles/utilities.scss'); // this is something I would fix since the import isn't working properly -- just need to google
+@import url('../styles/components/_header.scss');
+@import url('../styles/components/_productShowcase.scss');
+@import url('../styles/components/_productDetails.scss');
+
+.app {
+	background: $bg-primary;
+	height: 100vh;
+	max-width: 100vw;
+
+	&__container {
+		max-width: 80%;
+		margin: 0 auto;
+		height: 100%;
+	}
+}
+
+.productPage {
+	background: linear-gradient(
+		to right,
+		#F7EDDE 0%,
+		#F7EDDE 50%,
+		#FFFBF2 50%,
+		#FFFBF2 100%
+	);
+}

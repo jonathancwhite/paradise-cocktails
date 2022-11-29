@@ -1,0 +1,63 @@
+.productDetails {
+	margin-top: 4rem;
+	display: grid;
+	grid-template-columns: 55% 45%;
+	padding-bottom: 10rem;
+	// gap: 3rem;
+	&__images {
+		img {
+			max-width: 100%;
+			border-radius: 10px;
+		}
+	}
+	&__info {
+		padding-left: 8em;
+		&--title {
+			font-family: 'Quicksand';
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 40px;
+			color: #494939;
+			margin-bottom: 3rem;
+		}
+		&--ingredients {
+			h5 {
+				font-family: 'Quicksand';
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 20px;
+				color: #494939;
+			}
+			ul {
+				padding-inline-start: 1.2em;
+				list-style: none;
+				li {
+					line-height: 27px;
+					&::before {
+						content: "\2022";
+						color: #DB6355;
+						font-weight: bold;
+						display: inline-block;
+						width: 1em;
+						margin-left: -1em;
+					}
+				}
+			}
+		}
+		&--instructions {
+			h5 {
+				font-family: 'Quicksand';
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 20px;
+				color: #494939;
+			}
+			p {
+				font-family: 'Quicksand';
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 27px;
+			}
+		}
+	}
+}
