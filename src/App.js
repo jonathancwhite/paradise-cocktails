@@ -4,6 +4,17 @@ import { useState, useEffect } from 'react';
 
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
+/**
+ * paradise cocktails -- groove commerce technical assessment
+ *
+ * @author Jonathan White
+ * @version 1.0.0
+ * @date 11/29/2022
+ *
+ * Paradise Cocktails shows a list of popular cocktails based on the database given (the cocktail db)
+ * User can then select the cocktail they would like to preview and it will show them the details of that cocktail
+ *
+ */
 function App() {
 
 	const [activeComponent, setActiveComponent] = useState('productListing');
@@ -11,6 +22,7 @@ function App() {
 	const [drinkIndex, setDrinkIndex] = useState(0);
 	const [productPage, setProductPage] = useState(false);
 
+	// in production, I would hide the API key and host via env variables
 	useEffect(() => {
 		const options = {
 			method: 'GET',
